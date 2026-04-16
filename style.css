@@ -1,0 +1,63 @@
+:root {
+    --gold: #cc9b28;
+    --gold-hover: #e3c98a;
+    --charcoal: #3a3a3a;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--charcoal);
+}
+
+.lora-font {
+    font-family: 'Lora', serif;
+}
+
+.bg-charcoal { background-color: var(--charcoal); }
+.bg-gold { background-color: var(--gold); }
+.text-gold { color: var(--gold); }
+
+.btn-gold {
+    background-color: var(--gold);
+    color: white;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    color: var(--charcoal);
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://offitodoclosets.com/wp-content/uploads/2021/12/portadanueva-offitodo-scaled-1080x480.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.product-card {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    border-bottom-color: var(--gold);
+}
+
+.process-card {
+    background: var(--light-bg);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
