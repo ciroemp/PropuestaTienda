@@ -1,0 +1,144 @@
+:root {
+    --gold: #cc9b28;
+    --gold-hover: #e3c98a;
+    --charcoal: #3a3a3a;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--charcoal);
+    overflow-x: hidden;
+}
+
+.lora-font {
+    font-family: 'Lora', serif;
+}
+
+.bg-charcoal { background-color: var(--charcoal); }
+.bg-gold { background-color: var(--gold); }
+.text-gold { color: var(--gold); }
+
+.btn-gold {
+    background-color: var(--gold);
+    color: white;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    color: var(--charcoal);
+}
+
+/* ============================================= */
+/* NUEVO DISEÑO DEL HERO                         */
+/* ============================================= */
+
+.hero {
+    min-height: 85vh;
+    background-color: #2a2a2a; /* Fondo sólido oscuro */
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.hero-flex-container {
+    display: flex;
+    flex-direction: column; /* Móvil: Uno abajo del otro */
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.hero-info-content {
+    flex: 1;
+}
+
+.hero-image-frame {
+    flex: 1;
+    width: 100%;
+    max-width: 500px; /* Evita que la foto sea gigante en móviles */
+    height: 300px; /* Altura controlada para móvil */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.hero-local-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la técnica de "cover" pero en etiqueta img */
+    object-position: center;
+}
+
+/* Ajustes para Escritorio */
+@media (min-width: 992px) {
+    .hero-flex-container {
+        flex-direction: row; /* Uno al lado del otro */
+        text-align: left;
+    }
+
+    .hero-image-frame {
+        max-width: none;
+        height: 450px;
+    }
+
+    .hero-info-content {
+        padding-right: 2rem;
+    }
+}
+
+/* ============================================= */
+/* RESTO DE ESTILOS                              */
+/* ============================================= */
+
+.product-card {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    border-bottom-color: var(--gold);
+}
+
+.process-card {
+    background: var(--light-bg);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.top-confidence-bar {
+    font-size: 0.85rem;
+}
+
+.border-gold-dim {
+    border-color: rgba(204, 155, 40, 0.3) !important;
+}
+
+.confidence-item {
+    transition: opacity 0.2s ease;
+}
+
+.whatsapp-top-link {
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.whatsapp-top-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+    .border-start-md {
+        border-left: 1px solid; /* Corregido de border-start a border-left */
+    }
+}
