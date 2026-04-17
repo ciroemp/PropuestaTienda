@@ -12,7 +12,7 @@ const stockProductos = [
         id: 2,
         nombre: "Combo Closet de Pared",
         categoria: "Estructural",
-        descripcion: "Maximiza el espacio de tu dormitorio con diseño a medida.",
+        descripcion: "Maximiza tus espacios con diseño a medida.",
         imagen: "https://offitodoclosets.com/wp-content/uploads/2021/11/Closet6-300x300.jpg",
         whatsapp: "https://wa.me/50379044193?text=Hola! Me interesa el Closet de Pared"
     },
